@@ -1,0 +1,36 @@
+{
+  "name": "ai-teddy-bear",
+  "version": "1.0.0",
+  "description": "A 3D animated teddy bear with AI-powered speech capabilities",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "3d",
+    "animation",
+    "teddy-bear",
+    "ai",
+    "speech-recognition",
+    "text-to-speech",
+    "threejs",
+    "webgl"
+  ],
+  "author": "AI Assistant",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ai-teddy-bear.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/ai-teddy-bear/issues"
+  },
+  "homepage": "https://github.com/yourusername/ai-teddy-bear#readme"
+}
