@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle, #ffe9e0 0%, #ffb6c1 100%);
+}
+
+#teddyCanvas {
+  width: 100vw;
+  height: 100vh;
+  display: block; /* remove whitespace */
+}
+
+#ui {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #4b2e2a;
+  z-index: 10;
+}
+
+#talkButton {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background-color: #ff7f50;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#talkButton:hover {
+  background-color: #ff6347;
+}
+
+#status {
+  margin-top: 10px;
+}
