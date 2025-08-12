@@ -1,0 +1,34 @@
+{
+  "name": "ai-teddy-bear-companion",
+  "version": "1.0.0",
+  "description": "A 3D animated teddy bear character with AI-powered speech capabilities",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "3d",
+    "teddy-bear",
+    "ai",
+    "speech-recognition",
+    "text-to-speech",
+    "threejs",
+    "animation",
+    "web",
+    "interactive"
+  ],
+  "author": "AI Assistant",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ai-teddy-bear-companion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/ai-teddy-bear-companion/issues"
+  },
+  "homepage": "https://github.com/yourusername/ai-teddy-bear-companion#readme"
+}
