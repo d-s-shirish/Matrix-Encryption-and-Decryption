@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced AI Teddy Bear - Your Friendly 3D Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Enhanced AI Teddy Bear</h1>
+            <p>Your friendly, talking companion with realistic animations</p>
+        </header>
+
+        <main>
+            <div class="teddy-container">
+                <canvas id="teddyCanvas"></canvas>
+                <div class="controls">
+                    <button id="startListening" class="btn primary">
+                        <span class="icon">🎤</span>
+                        Start Listening
+                    </button>
+                    <button id="stopListening" class="btn secondary" disabled>
+                        <span class="icon">⏹️</span>
+                        Stop Listening
+                    </button>
+                </div>
+                <div class="status">
+                    <div id="statusText">Click "Start Listening" to talk to your enhanced teddy bear!</div>
+                    <div id="transcript"></div>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🎭 Enhanced Expressions</h3>
+                    <p>More realistic facial expressions with head tilts and eye highlights</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🦻 Ears & Details</h3>
+                    <p>Animated ears, detailed eyes with highlights, and realistic fur texture</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💎 Beautiful Bow Tie</h3>
+                    <p>Enhanced bow tie with gem center and better materials</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎬 Smooth Animations</h3>
+                    <p>Idle animations, better blinking, and synchronized mouth movements</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🗣️ Smart Responses</h3>
+                    <p>Enhanced conversation logic with more natural responses</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✨ Better Lighting</h3>
+                    <p>Professional lighting setup with shadows and atmospheric effects</p>
+                </div>
+            </div>
+
+            <div class="instructions">
+                <h2>How to Interact</h2>
+                <div class="instruction-grid">
+                    <div class="instruction-item">
+                        <span class="instruction-icon">🎤</span>
+                        <h4>Voice Commands</h4>
+                        <p>Try saying: "Hello", "How are you?", "Tell me a joke", "Wave", "What's your name?"</p>
+                    </div>
+                    <div class="instruction-item">
+                        <span class="instruction-icon">🖱️</span>
+                        <h4>Mouse Controls</h4>
+                        <p>Click to make Teddy wave, drag to rotate view, scroll to zoom</p>
+                    </div>
+                    <div class="instruction-item">
+                        <span class="instruction-icon">👁️</span>
+                        <h4>Watch Expressions</h4>
+                        <p>Observe how Teddy's face changes based on your conversation</p>
+                    </div>
+                    <div class="instruction-item">
+                        <span class="instruction-icon">🎧</span>
+                        <h4>Audio Setup</h4>
+                        <p>Allow microphone access and ensure speakers are on for full experience</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Enhanced version with better animations, lighting, and interactions</p>
+            <p>Made with ❤️ using Three.js and Web Speech API</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="teddy-bear-enhanced.js"></script>
+</body>
+</html>

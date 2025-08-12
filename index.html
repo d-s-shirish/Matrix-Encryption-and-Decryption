@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Teddy Bear - Your Friendly Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Teddy Bear</h1>
+            <p>Your friendly, talking companion</p>
+        </header>
+
+        <main>
+            <div class="teddy-container">
+                <canvas id="teddyCanvas"></canvas>
+                <div class="controls">
+                    <button id="startListening" class="btn primary">
+                        <span class="icon">🎤</span>
+                        Start Listening
+                    </button>
+                    <button id="stopListening" class="btn secondary" disabled>
+                        <span class="icon">⏹️</span>
+                        Stop Listening
+                    </button>
+                </div>
+                <div class="status">
+                    <div id="statusText">Click "Start Listening" to talk to your teddy bear!</div>
+                    <div id="transcript"></div>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🎭 Expressive</h3>
+                    <p>Realistic facial expressions and gestures</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🗣️ Conversational</h3>
+                    <p>Natural speech recognition and response</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎨 Beautiful</h3>
+                    <p>Soft, textured fur with charming details</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ using Three.js and Web Speech API</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="teddy-bear.js"></script>
+</body>
+</html>
