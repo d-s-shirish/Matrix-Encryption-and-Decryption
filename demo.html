@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Teddy Bear - Demo & Examples</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        
+        .demo-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+        
+        .example-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .example-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #ffd700;
+        }
+        
+        .example-card h3 {
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+        
+        .example-card p {
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        
+        .example-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .example-card li {
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .example-card li:last-child {
+            border-bottom: none;
+        }
+        
+        .features-list {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .features-list h3 {
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+        
+        .features-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+        }
+        
+        .features-list li:before {
+            content: "✨";
+            margin-right: 10px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+        
+        .cta-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1>🤖 AI Teddy Bear Companion</h1>
+        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 30px;">
+            Experience the magic of interactive 3D animation and AI-powered conversation!
+        </p>
+    </div>
+
+    <div class="demo-container">
+        <h2>🎭 Interactive Features</h2>
+        <div class="features-list">
+            <h3>What makes this teddy bear special:</h3>
+            <ul>
+                <li>Realistic 3D model with soft fur texture</li>
+                <li>Smooth animations for blinking, talking, and gestures</li>
+                <li>Voice recognition for hands-free interaction</li>
+                <li>Natural text-to-speech with friendly personality</li>
+                <li>Context-aware AI responses</li>
+                <li>Responsive design for all devices</li>
+                <li>Beautiful modern UI with glassmorphism effects</li>
+                <li>Real-time visual feedback and status indicators</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="demo-container">
+        <h2>💬 Try These Conversation Starters</h2>
+        <div class="example-grid">
+            <div class="example-card">
+                <h3>👋 Greetings</h3>
+                <p>Start a friendly conversation:</p>
+                <ul>
+                    <li>"Hello there!"</li>
+                    <li>"Hi teddy bear!"</li>
+                    <li>"Hey, how are you?"</li>
+                    <li>"Good morning!"</li>
+                </ul>
+            </div>
+
+            <div class="example-card">
+                <h3>😊 Feelings & Emotions</h3>
+                <p>Ask about the teddy bear's feelings:</p>
+                <ul>
+                    <li>"How are you feeling?"</li>
+                    <li>"Are you happy today?"</li>
+                    <li>"What's your mood like?"</li>
+                    <li>"Do you feel good?"</li>
+                </ul>
+            </div>
+
+            <div class="example-card">
+                <h3>🌤️ Weather Chat</h3>
+                <p>Talk about the weather:</p>
+                <ul>
+                    <li>"What do you think about the weather?"</li>
+                    <li>"Do you like rainy days?"</li>
+                    <li>"What's your favorite weather?"</li>
+                    <li>"How's the weather today?"</li>
+                </ul>
+            </div>
+
+            <div class="example-card">
+                <h3>😄 Jokes & Humor</h3>
+                <p>Ask for some teddy bear humor:</p>
+                <ul>
+                    <li>"Tell me a joke!"</li>
+                    <li>"Say something funny"</li>
+                    <li>"Make me laugh"</li>
+                    <li>"Do you know any jokes?"</li>
+                </ul>
+            </div>
+
+            <div class="example-card">
+                <h3>🕺 Dance & Movement</h3>
+                <p>Watch the teddy bear dance:</p>
+                <ul>
+                    <li>"Can you dance?"</li>
+                    <li>"Show me a dance"</li>
+                    <li>"Dance for me!"</li>
+                    <li>"Let's dance together"</li>
+                </ul>
+            </div>
+
+            <div class="example-card">
+                <h3>🤗 Hugs & Affection</h3>
+                <p>Get some teddy bear love:</p>
+                <ul>
+                    <li>"Can I have a hug?"</li>
+                    <li>"Give me a hug"</li>
+                    <li>"I need a hug"</li>
+                    <li>"Hug me please!"</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-container">
+        <h2>🎮 How to Interact</h2>
+        <div class="example-grid">
+            <div class="example-card">
+                <h3>🎤 Voice Commands</h3>
+                <ul>
+                    <li>Click "Start Listening"</li>
+                    <li>Speak clearly into your microphone</li>
+                    <li>Wait for the teddy bear to respond</li>
+                    <li>Click "Stop Listening" when done</li>
+                </ul>
+            </div>
+
+            <div class="example-card">
+                <h3>⌨️ Text Input</h3>
+                <ul>
+                    <li>Type your message in the text box</li>
+                    <li>Press Enter or click "Send"</li>
+                    <li>Watch the teddy bear respond</li>
+                    <li>Enjoy the conversation!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <a href="index.html" class="cta-button">🚀 Launch AI Teddy Bear</a>
+        <p style="margin-top: 20px; opacity: 0.8;">
+            Click the button above to start your interactive experience with the AI Teddy Bear!
+        </p>
+    </div>
+
+    <div class="demo-container">
+        <h2>🔧 Technical Requirements</h2>
+        <div class="example-grid">
+            <div class="example-card">
+                <h3>🌐 Browser Support</h3>
+                <ul>
+                    <li>Chrome 66+ (Recommended)</li>
+                    <li>Firefox 60+</li>
+                    <li>Safari 14+</li>
+                    <li>Edge 79+</li>
+                </ul>
+            </div>
+
+            <div class="example-card">
+                <h3>🎯 Features Needed</h3>
+                <ul>
+                    <li>WebGL support</li>
+                    <li>Microphone access</li>
+                    <li>Audio output</li>
+                    <li>Modern JavaScript</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

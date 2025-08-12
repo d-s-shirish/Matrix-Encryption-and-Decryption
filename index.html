@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Teddy Bear Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Teddy Bear Companion</h1>
+            <p>Talk to your friendly 3D teddy bear friend!</p>
+        </header>
+
+        <main>
+            <div class="teddy-container">
+                <div id="teddy-canvas"></div>
+                <div class="teddy-controls">
+                    <button id="startListening" class="btn primary">
+                        <span class="icon">🎤</span>
+                        Start Listening
+                    </button>
+                    <button id="stopListening" class="btn secondary" disabled>
+                        <span class="icon">⏹️</span>
+                        Stop Listening
+                    </button>
+                </div>
+            </div>
+
+            <div class="conversation-panel">
+                <div class="status-indicator">
+                    <div id="status" class="status">Ready to chat!</div>
+                    <div id="listening-indicator" class="listening-indicator hidden">
+                        <div class="pulse"></div>
+                        Listening...
+                    </div>
+                </div>
+                
+                <div class="conversation-area">
+                    <div id="conversation" class="conversation"></div>
+                </div>
+
+                <div class="input-area">
+                    <input type="text" id="textInput" placeholder="Type your message here..." class="text-input">
+                    <button id="sendMessage" class="btn primary">Send</button>
+                </div>
+            </div>
+        </main>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>🎭 Expressive Animations</h3>
+                <p>Watch the teddy bear blink, smile, and gesture naturally</p>
+            </div>
+            <div class="feature-card">
+                <h3>🗣️ Voice Interaction</h3>
+                <p>Speak to your teddy bear and hear it respond</p>
+            </div>
+            <div class="feature-card">
+                <h3>🤖 AI-Powered</h3>
+                <p>Intelligent responses with personality</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Three.js and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    
+    <!-- Speech recognition and synthesis -->
+    <script src="https://cdn.jsdelivr.net/npm/web-speech-recognition@1.0.0/dist/web-speech-recognition.min.js"></script>
+    
+    <!-- Main application script -->
+    <script src="teddy-bear.js"></script>
+</body>
+</html>
