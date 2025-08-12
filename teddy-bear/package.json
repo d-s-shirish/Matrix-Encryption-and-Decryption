@@ -1,0 +1,23 @@
+{
+  "name": "teddy-bear",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "start": "vite preview --host 0.0.0.0 --port 5173"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vite": "^7.1.2",
+    "vite-plugin-glsl": "^1.5.1"
+  },
+  "dependencies": {
+    "@types/three": "^0.179.0",
+    "glslify": "^7.1.1",
+    "postprocessing": "^6.37.7",
+    "three": "^0.179.1"
+  }
+}
